@@ -3,9 +3,6 @@ package register;
 
 import java.util.*;
 
-/**
- * 修改后的MapObjRegister实现了Observable接口，实时同步数据
- */
 public class MapObjRegister implements ObjRegister {
 	private HashMap<String, HashMap<String, Object>> dataMap = new HashMap<String, HashMap<String, Object>>();
 

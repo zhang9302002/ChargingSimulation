@@ -3,9 +3,7 @@ package fileReader;
 import java.io.*;
 import java.util.*;
 
-/**
- * 微调之后的FileReader4EFormat更好地适配南方电网的E格式文件
- */
+
 public class FileReader4EFormat {
 
 	final static String TAGSTARTER = "TagStarter";
