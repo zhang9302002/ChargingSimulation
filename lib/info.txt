@@ -1,23 +1,44 @@
-<Car::北京>
-@   id  capacity    speed   initialPosX initialPosY
-//  序号  电池容量km 行驶速度km/h 初始位置X   初始位置Y
-#   1   400          40         0            0
-#   2   400          40         0            0
-#   3   400          40         0            0
-#   4   400          40         0            0
-#   5   400          40         0            0
-#   6   300          40         0            0
-#   7   300          40         0            0
-#   8   300          40         0            0
-#   9   300          40         0            0
-#   10  300          40         0            0
-</Car::北京>
+<Car>
+@   id  capacity    speed       homePlaceID   workPlaceID
+//  序号 电池容量km   行驶速度km/h  居住地编号      工作地编号
+#   1   400         40          1             5
+#   2   400         40          1             4
+#   3   400         40          1             6
+#   4   400         40          2             6
+#   5   400         40          2             8
+#   6   300         40          2             8
+#   7   300         40          2             4
+#   8   300         40          3             5
+#   9   300         40          3             7
+#   10  300         40          3             7
+</Car>
 
-<ChargingStation::北京>
-@   id  number  chargingSpeed
-//  序号  充电桩数量   充电速度km/h
-#   1   3       50
-#   2   3       50
-#   3   3       50
-#   4   3       50
-</ChargingStation::北京>
+<Station>
+@   id  number      chargingSpeed   placeID
+//  序号 充电桩数量   充电速度km/h      所在地编号
+#   1   3           50              2
+#   2   3           50              3
+#   3   3           50              5
+#   4   3           50              8
+</Station>
+
+<Place>
+@   id  type    X-coordinate    Y-coordinate
+//  序号  区域类型    横坐标       纵坐标
+#   1   living      0           0
+#   2   living      5           0
+#   3   living      10          0
+#   4   living      15          0
+#   5   living      0           5
+#   6   living      5           5
+#   7   living      10          5
+#   8   living      15          5
+#   9   business    0           10
+#   10  business    5           10
+#   11  business    10          10
+#   12  business    15          10
+#   13  industrial  0           15
+#   14  industrial  5           15
+#   15  industrial  10          15
+#   16  industrial  15          15
+</Place>

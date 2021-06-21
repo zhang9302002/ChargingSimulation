@@ -46,7 +46,7 @@ public class EFileDecoder {
 		}
 		String defaultId = prop.getProperty("storeid");
 		if (defaultId == null)
-			defaultId = "序号";
+			defaultId = "id";
 		String tag = reader.getCurrentTag();
 		while (tag != null) {
 			System.out.println("eformat data tag : " + tag);

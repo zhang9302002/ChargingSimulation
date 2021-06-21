@@ -89,7 +89,7 @@ public class FileReader4EFormat {
 				currentTag = matchTagStarter(curLine);
 			}
 			curLine = br.readLine();
-			while (!matchCommentNameLine(curLine)) {
+			while (!matchAttributeNameLine(curLine)) {
 				curLine = br.readLine();
 			}
 			if (configPro == null)
@@ -107,6 +107,7 @@ public class FileReader4EFormat {
 				String sss = st.nextToken();
 				currentAttList.add(sss);
 			}
+
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -189,7 +190,6 @@ public class FileReader4EFormat {
 		String tagEnder = configPro.getProperty(TAGENDER);
 		String tagStartChar = tagStarter.substring(0, tagStarter.indexOf("xx"));
 		String tagEndChar = tagEnder.substring(0, tagEnder.indexOf("xx"));
-//		System.out.println(tagStarter + " " + tagStartChar + " " + tagEnder + " " + tagEndChar);
 		if (str.startsWith(tagStartChar) && !str.startsWith(tagEndChar)) {
 			int idxOfBlank = str.indexOf(' ');
 			int idxOfEndChar = str.indexOf(tagStarter.charAt(tagStarter

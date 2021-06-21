@@ -224,7 +224,7 @@ public class RegisterViewer extends JFrame {
 				Component component = super.prepareRenderer(renderer, row,
 						column);
 
-				if (row % 2 == 0) { // 将row改为column，则分列以不同颜色显示
+				if (row % 2 == 0) {
 					component.setBackground(Color.white);
 				}
 				if (row % 2 == 1) {

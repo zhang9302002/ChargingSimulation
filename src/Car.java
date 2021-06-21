@@ -14,19 +14,47 @@ public class Car {
 
     private double speed; // speed of driving
 
-    private double consumeSpeed; // speed of consumption of electricity
+    private String homePlaceID;
 
-    private double[] currentPos; // (currentPos[0], currentPos[1]): (x,y) coordinates of car
+    private String workPlaceID;
 
-    public Car(String id, double capacity, double power, double speed, double consumeSpeed, double x, double y) {
+    private double[] currentPos = new double[2]; // (currentPos[0], currentPos[1]): (x,y) coordinates of car
+
+    public Car(String id, double capacity, double speed, String hID, String wID) {
         this.id = id;
         this.capacity = capacity;
-        this.power = power;
+        this.power = capacity;
         this.speed = speed;
-        this.consumeSpeed = consumeSpeed;
-        this.currentPos = new double[2];
-        this.currentPos[0] = x;
-        this.currentPos[1] = y;
+        this.homePlaceID = hID;
+        this.workPlaceID = wID;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public double getCapacity() {
+        return capacity;
+    }
+
+    public double getPower() {
+        return power;
+    }
+
+    public double getSpeed() {
+        return speed;
+    }
+
+    public String  getHomePlaceID() {
+        return homePlaceID;
+    }
+
+    public String getWorkPlaceID() {
+        return workPlaceID;
+    }
+
+    public double[] getCurrentPos() {
+        return currentPos;
     }
 
     public static void main(String[] args) {

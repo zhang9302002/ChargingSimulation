@@ -87,7 +87,7 @@ public class MappedDataTableModel extends DefaultTableModel {
 		if (!isDataAvailable)
 			return null;
 		Object dO = (dataV.get(row)).get(col);
-		if (dO == null) return "Œ¥…Ë÷√";
+		if (dO == null) return "not setted";
 		return dO.toString();
 	}
 
