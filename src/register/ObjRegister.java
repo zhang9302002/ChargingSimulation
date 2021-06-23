@@ -3,6 +3,9 @@ package register;
 import java.util.HashMap;
 import java.util.Set;
 
+/**
+ * Obj Register is the interface
+ */
 public interface ObjRegister {
 
 	public boolean registDataObjType(String objType);

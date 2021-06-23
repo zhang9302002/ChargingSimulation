@@ -8,7 +8,8 @@ import java.util.HashMap;
 import java.util.Properties;
 
 /**
- *
+ * EFileDecoder can decode the E-format file with the help of FileReader4EFormat
+ * and store the data to an MapObjRegister
  */
 public class EFileDecoder {
 

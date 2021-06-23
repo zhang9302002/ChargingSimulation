@@ -3,7 +3,9 @@ package fileReader;
 import java.io.*;
 import java.util.*;
 
-
+/**
+ * FileReader4EFormat can extract data from the E-format file "info.txt"
+ */
 public class FileReader4EFormat {
 
 	final static String TAGSTARTER = "TagStarter";

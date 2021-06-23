@@ -3,6 +3,10 @@ package register;
 
 import java.util.*;
 
+/**
+ * Map Obj Register is to store the data extracted from the "info.txt"
+ * using HashMap<String, HashMap<String, HashMap<String, String>>> data structure
+ */
 public class MapObjRegister implements ObjRegister {
 	private HashMap<String, HashMap<String, Object>> dataMap = new HashMap<String, HashMap<String, Object>>();
 
